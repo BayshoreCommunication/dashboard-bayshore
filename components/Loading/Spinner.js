@@ -6,7 +6,7 @@ export const Spinner = ({ className }) => {
       <span
         role="status"
         className={cn(
-          "inline-block size-6 animate-spin rounded-full border-4 border-solid border-gray-100 border-r-gray-100/30 border-b-gray-100/30",
+          "inline-block size-6 animate-spin rounded-full border-4 border-solid border-gray-100 border-r-black/30 border-b-black/30",
           className
         )}
       ></span>
@@ -21,7 +21,7 @@ export const PageSpinner = ({ className }) => {
       <span
         role="status"
         className={cn(
-          "inline-block size-20 animate-spin rounded-full border-[6px] border-solid border-cyan-500 border-r-cyan-500/30 border-b-cyan-500/30",
+          "inline-block size-20 animate-spin rounded-full border-[6px] border-solid border-b-slate-500 border-r-black/30 border-b-black/30",
           className
         )}
       ></span>
