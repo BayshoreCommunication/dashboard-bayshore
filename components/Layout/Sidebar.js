@@ -64,13 +64,14 @@ function Sidebar({ navLinks }) {
     <div className="sidebar h-screen overflow-y-auto bg-white z-30 top-0 bottom-0 sticky border-r border-gray-400 w-[260px]">
       <div className="mb-5">
         <div className="px-[47px] py-9">
-          <div className="relative w-[155px] h-[96px]">
+          <div className="relative w-[155px] h-[155px]">
             {logo && (
               <Image
                 // src="/images/static-logo.png"
                 src={logo}
                 alt="static logo"
                 sizes="200px"
+                // sizes="100vw"
                 fill
                 className="object-cover"
                 priority

@@ -154,7 +154,8 @@ function ImageUploadField({
 
           <input
             type="file"
-            accept="image/*"
+            accept=".jpg, .jpeg, .png, .svg"
+            // accept="image/*"
             id="image"
             onChange={handleImageChange}
             className="hidden"
