@@ -36,7 +36,7 @@ function SigninPage() {
       <div className="min-h-screen flex bg-custom-gray3">
         <div className="flex-1 flex relative">
           <div className="flex items-center w-[70%] justify-center z-10 text-5xl font-bold bg-white text-black">
-            <div className="ml-[20%] relative w-[340px] h-[210px]">
+            <div className="ml-[20%] relative w-[340px] h-[340px]">
               {logo && (
                 <Image
                   src={logo}
