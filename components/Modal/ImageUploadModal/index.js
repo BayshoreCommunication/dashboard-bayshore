@@ -31,6 +31,7 @@ function ImageUploadModal({
       </AlertDialogContent>
     </AlertDialog>
   );
+  
 }
 
 export default ImageUploadModal;

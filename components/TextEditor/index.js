@@ -9,6 +9,7 @@ import Image from "@tiptap/extension-image";
 import Link from "@tiptap/extension-link";
 import Toolbar from "./Toolbar";
 import ImageResize from "tiptap-extension-resize-image";
+import Youtube from "@tiptap/extension-youtube";
 
 const TextEditor = ({ value, setValue }) => {
   const editor = useEditor({
@@ -45,9 +46,23 @@ const TextEditor = ({ value, setValue }) => {
         allowBase64: true,
         inline: true,
       }),
+
+      Youtube.configure({
+        controls: false,
+        nocookie: true,
+        HTMLAttributes: {
+          class: "responsive-video resizable",
+        },
+      }),
     ],
 
     content: ``,
+
+    editorProps: {
+      attributes: {
+        spellcheck: "false",
+      },
+    },
 
     onUpdate: ({ editor }) => {
       const html = editor.getHTML();
@@ -64,7 +79,7 @@ const TextEditor = ({ value, setValue }) => {
     // to retrieve your editors content from somewhere
 
     editor?.commands.setContent(value);
-  }, [editor?.contentComponent]);
+  }, [editor?.commands, value]);
 
   return (
     <div>
